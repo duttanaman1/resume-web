@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css?family=Amaranth|Source+Sans+Pro&display=swap");
+
+.main h1 {
+  color: #61d4d7;
+  font-family: "Amaranth", sans-serif;
+  line-height: 3em;
+}
+.main h3 {
+  color: rgb(1, 0, 32);
+  font-family: "Amaranth", sans-serif;
+  font-size: 2rem;
+  text-align: left;
+}
+.main h5 {
+  color: red;
+  text-align: left;
+}
+
+.main p {
+  color: rgb(1, 20, 29);
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.4em;
+  text-align: left;
+}
+.main .timeline {
+  position: relative;
+}
+.main .timeline:before {
+  background: #f1efef;
+  content: "";
+  height: 100%;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+  width: 4px;
+}
+.main .timeline .timeline-item {
+  clear: both;
+  list-style-type: none;
+  padding: 0 3px;
+  position: relative;
+}
+.main .timeline .timeline-item:before {
+  background: #8ed6d6;
+  border-radius: 50%;
+  content: "";
+  height: 20px;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+  width: 20px;
+}
+.main .timeline .timeline-item .timeline-content {
+  background: #8ed6d6;
+  border: 2px solid #8ed6d6;
+  padding: 1em;
+  width: 46%;
+}
+
+.main .timeline .timeline-item:nth-child(even) .timeline-content {
+  float: right;
+}
+.main .timeline .timeline-item:nth-child(2):before {
+  background: #bea4ec;
+}
+.main .timeline .timeline-item:nth-child(2) .timeline-content {
+  background: #bea4ec;
+  border: 2px solid #bea4ec;
+}
+.main .timeline .timeline-item:nth-child(3):before {
+  background: #aec785;
+}
+.main .timeline .timeline-item:nth-child(3) .timeline-content {
+  background: #aec785;
+  border: 2px solid #aec785;
+}
+
+@media screen and (max-width: 968px) {
+  .main .timeline {
+    margin: 0 0 0 10px;
+  }
+  .main .timeline:before {
+    left: 0px;
+  }
+  .main .timeline .timeline-item:before {
+    left: 0;
+  }
+  .main .timeline .timeline-item .timeline-content {
+    margin: 2em 0;
+    width: 100%;
+  }
+  .main .timeline .timeline-item:nth-child(even) .timeline-content {
+    float: initial;
+  }
+}
